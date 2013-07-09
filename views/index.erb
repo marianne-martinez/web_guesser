@@ -2,8 +2,18 @@
 	<head></head>
 	<body>
 		<p>
-		The secret number is: <%= rand(100) %>
-		<p>
+		The SECRET NUMBER is <%= number %>
+		</p>
+			<form>
+				<input type='text' name='
+				guess' />
+				<input type='submit' value='Guess!' />
+			</form>
+			<p>
+				<%= if params['guess'].to_i > number.to_i %>
+ 					<%= "Too high!"
+ 				end %>
+ 			</p>
 	</body>
 </html>
 
